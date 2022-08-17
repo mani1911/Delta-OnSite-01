@@ -6,6 +6,8 @@ const layer1 = document.querySelector('.layer1');
 const incBtn = document.querySelector('.inc');
 const decBtn = document.querySelector('.dec');
 const display = document.querySelector('.layers');
+const selColor = document.querySelector('.selectColor');
+const main = document.querySelector('.main');
 
 layer5.style.display = "none";
 layer4.style.display = "none";
@@ -25,18 +27,23 @@ incBtn.addEventListener('click',()=>{
     switch(val){
         case 1:
             layer5.style.display = "block";
+            layer5.style.backgroundColor = selColor.value;
             break;
         case 2:
             layer4.style.display = "block";
+            layer4.style.backgroundColor = selColor.value;
             break;
         case 3:
             layer3.style.display = "block";
+            layer3.style.backgroundColor = selColor.value;
             break;
         case 4:
             layer2.style.display = "block";
+            layer2.style.backgroundColor = selColor.value;
             break;
         case 5:
             layer1.style.display = "block";
+            layer1.style.backgroundColor = selColor.value;
             break;
         default:
             break;
@@ -72,3 +79,5 @@ decBtn.addEventListener('click', ()=>{
             
     }
 })
+
+
